@@ -10,7 +10,7 @@ namespace ray_tracing
 {
     class View
     {
-        int BasicProgramID;
+        public int BasicProgramID;
         int BasicVertexShader;
         int BasicFragmentShader;
         int vbo_position;
@@ -74,7 +74,7 @@ namespace ray_tracing
             Console.WriteLine(GL.GetProgramInfoLog(BasicProgramID));
         }
 
-        private void InitBuffer()
+        public void InitBuffer()
         {
             GL.GenBuffers(1, out vbo_position);
 
